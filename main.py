@@ -19,12 +19,13 @@ console_formatter = ColoredFormatter(
     log_colors={
         "DEBUG": "cyan",
         "INFO": "green",
+        "WARNING": "yellow",
+        "ERROR": "red",
         "CRITICAL": "bold_white,bg_red",
     },
 )
 
 console_handler.setFormatter(console_formatter)
-
 
 logging.basicConfig(
     level=logging.DEBUG,
