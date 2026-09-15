@@ -74,7 +74,8 @@ def main() -> None:
         if last_city and not city_game(last_city, user_input):
             print(f"Город должен начинаться на {last_city[-1]}. Вы проиграли((")
             logger.debug(f"Город должен начинаться на {last_city[-1]}")
-            logger.info("Игра завершена, так как человек не выполнил критерий по нужной букве")
+            logger.info("Человек проиграл...")
+            logger.info("Игра завершена...")
             break
         available.remove(user_input)
         last_city = user_input
